@@ -1,0 +1,13 @@
+<% include ../views/partials/header %>
+
+    <h1><%= title %></h1>
+    <h1><%= category.title %></h1>
+
+    <ul class="list-group">
+        <% category.forEach(function(category){ %>
+            <li class="list-group-item"><a href="/articles/category/<%= category._id %>"> <%= category.title %> <a></li>
+            <li><%= category.Description %></li>
+        <% }) %>
+
+      </ul>
+    <% include ../views/partials/footer %>

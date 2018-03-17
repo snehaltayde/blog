@@ -1,0 +1,29 @@
+<% include ../views/partials/header %>
+
+    <h1><%= title %></h1>
+
+
+    <div class="container">
+
+
+        <h1><%= title %></h1>
+<form class="form-control" action="/categories/edit/<%=category._id%>" method="post">
+    <div class="form-group">
+      <label for=""> Title:</label>
+      <input class="form-control" type="text" name="title" value="<%= category.title %>">
+    </div>
+
+    <div class="form-group">
+      <label for=""> Description:</label>
+    <textarea class="form-control" name="description" rows="8" cols="80" value="<%= category.desc %>"><%= category.desc %></textarea>
+    </div>
+
+    <input class="btn btn-primary" type="submit" name="submit" value="Save">
+    <a class="btn btn-primary" href="/manage/categories">Back</a>
+
+    <a class="btn btn-danger category-delete pull-right" data-cat-id="<%=category._id%>" href="/manage/categories">Delete</a>
+
+
+        </form>
+        </div>
+    <% include ../views/partials/footer %>

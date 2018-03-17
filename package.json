@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "connect-flash": "*",
+    "ejs": "^2.5.7",
+    "express": "*",
+    "express-messages": "*",
+    "express-session": "^1.15.6",
+    "express-validator": "*",
+    "moment": "*",
+    "mongoose": "^5.0.10"
+  }
+}

@@ -1,0 +1,33 @@
+.create-btn{
+  margin-top: 15px;
+}
+
+#messages{
+
+  background: red;
+text-align: center;
+color: white;
+font-size: 18px;
+width: 65%;
+margin: auto;
+}
+
+#messages li{
+  list-style: none;
+
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    color: white;
+    margin-bottom: 2rem;
+    background-color: #2492ff;
+    border-radius: 0rem;
+}
+
+.col-md-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 30% !important;
+}

@@ -1,0 +1,28 @@
+<% include ../views/partials/header %>
+
+    <div><%- messages() %> <div>
+<div class="container">
+<div class="row">
+  <div class="col-md-9">
+    <h1><%= title %></h1>
+  </div>
+  <div class="col-md-3">
+<a href="/manage/categories/add" class="btn btn-primary create-btn">Add Category</a>
+  </div>
+</div>
+
+<table class="table table-striped">
+  <th>Category Name</th>
+  <% category.forEach(function(category){ %>
+      <tr>
+        <td> <%= category.title %>
+          <td>
+            <td><a class="btn btn-danger" href="/manage/categories/edit/<%=category._id%>">Edit</a> </td>
+
+          </tr>
+
+  <% }) %>
+</table>
+
+</div>
+    <% include ../views/partials/footer %>

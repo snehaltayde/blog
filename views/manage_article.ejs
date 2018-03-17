@@ -1,0 +1,35 @@
+<% include ../views/partials/header %>
+<div><%- messages() %> <div>
+<div class="container">
+<div class="row">
+  <div class="col-md-9">
+    <h1><%= title %></h1>
+  </div>
+  <div class="col-md-3">
+<a href="/manage/articles/add" class="btn btn-primary create-btn">Add Article</a>
+  </div>
+</div>
+<div class="container">
+
+<table class="table table-striped">
+<thead>
+  <th>Article Name</th>
+  <th>Action</th>
+  <th>Date</th>
+  <th>Author</th>
+</thead>
+  <% article.forEach(function(article){ %>
+      <tr>
+        <td> <%= article.title %><td>
+        <td><a class="btn btn-danger" href="/manage/articles/edit/<%=article._id%>">Edit</a> </td>
+        <td> <%= article.createdat%><td>
+          <td> <%= article.author %><td>
+
+      </tr>
+
+
+  <% }) %>
+</table>
+</div>
+</div>
+    <% include ../views/partials/footer %>
